@@ -3,8 +3,8 @@
 
 namespace App\Contracts\Repositories;
 
-
-use App\Contracts\Model\Account as AccountModelContract;
+use App\DTO\Account\AccountCreateDTO;
+use App\Contracts\Model\Account\Account as AccountModelContract;
 
 interface Account
 {

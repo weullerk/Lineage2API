@@ -3,12 +3,12 @@
 
 namespace App\Repositories\Eloquent;
 
+use App\Exceptions\FailureException;
 use App\Repositories\Eloquent\Entity\Account as AccountEloquent;
 
 use App\DTO\Account\AccountCreateDTO;
 use App\Contracts\Repositories\Account as AccountRepositoryContract;
-use App\Contracts\Model\Account as AccountModelContract;
-use \App\Models\Account\Account as AccountModel;
+use App\Contracts\Model\Account\Account as AccountModelContract;
 
 class Account implements AccountRepositoryContract
 {
@@ -19,7 +19,7 @@ class Account implements AccountRepositoryContract
      */
     public function create(AccountCreateDTO $accountDTO) : AccountModelContract
     {
-        $account = new AccountEloquent();
+        $account = $this->app->make('AccountEloquent');
         $account->login = $accountDTO->getLogin();
         $account->password = $accountDTO->getPassword();
         $account->email = $accountDTO->getEmail();
@@ -28,19 +28,15 @@ class Account implements AccountRepositoryContract
         $account->lastIP = '0.0.0.0';
         $account->lastServer = 1;
 
-        if ($account->save())
-        {
-            $accountModel = new AccountModel();
-            $accountModel->setLogin($account->login);
-            $accountModel->setPassword($account->password);
-            $accountModel->setEmail($account->email);
-            $accountModel->setAccessLevel($account->accessLevel);
+        if (!$account->save())
+            throw new FailureException("Error ao realizar o cadastro.");
 
-            return $accountModel;
-        }
-        else
-        {
-            return null;
-        }
+        $accountModel = $this->app->make('AccountModelContract');
+        $accountModel->setLogin($account->login);
+        $accountModel->setPassword($account->password);
+        $accountModel->setEmail($account->email);
+        $accountModel->setAccessLevel($account->accessLevel);
+
+        return $accountModel;
     }
 }

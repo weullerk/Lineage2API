@@ -2,108 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="815e02b4-7769-4bf1-be36-a8de7ad79627" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/Lineage2API.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.styleci.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Console/Kernel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Contracts/Model/Account.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Contracts/Repositories/Account.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Contracts/Repositories/Entity/Account.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Contracts/Services/Account.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/DTO/Account/Create.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Exceptions/Handler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Exceptions/ProcessFailureException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ConfirmPasswordController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ForgotPasswordController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ResetPasswordController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/VerificationController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/CheckForMaintenanceMode.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/EncryptCookies.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/TrimStrings.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/TrustProxies.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Account/Account.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Providers/BroadcastServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/Eloquent/Account.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/Eloquent/Entity/Account.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/Account.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Traits/L2jPasswordEncryter.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/artisan" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bootstrap/app.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bootstrap/cache/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/broadcasting.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/cache.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/hashing.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/jwt.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/logging.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/mail.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/queue.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/services.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/session.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_07_035002_alter_account_table_add_timestamp_columns.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/phpunit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/en/auth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/en/pagination.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/en/passwords.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/en/validation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/channels.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/console.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/app/public/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/cache/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/cache/data/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/sessions/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/testing/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/logs/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/CreatesApplication.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/TestCase.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Unit/ExampleTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/Account/CreateAccountServiceContractAccountService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Contracts/Model/Account.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Contracts/Model/Account/Account.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Contracts/Repositories/Account.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Contracts/Repositories/Account.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Contracts/Services/Account.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Contracts/Services/Account.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Contracts/Services/Account/CreateAccountServiceContract.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/DTO/Account/Create.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Exceptions/ProcessFailureException.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Exceptions/FailureException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/ConfirmPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ConfirmPasswordController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/VerificationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/VerificationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Account/Account.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Account/Account.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/Eloquent/Account.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Eloquent/Account.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Account.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/app.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,8 +138,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/DTO/Account" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -238,11 +154,11 @@
       <recent name="C:\Users\user\Documents\Web\Lineage2API\app\DTO\Account" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\Documents\Web\Lineage2API\app\Contracts\Services\Account" />
+      <recent name="C:\Users\user\Documents\Web\Lineage2API\app\Services\Account" />
+      <recent name="C:\Users\user\Documents\Web\Lineage2API\app\Contracts\Model\Account" />
       <recent name="C:\Users\user\Documents\Web\Lineage2API\app\Repositories\Eloquent" />
       <recent name="C:\Users\user\Documents\Web\Lineage2API\app\Repositories\Eloquent\Entity" />
-      <recent name="C:\Users\user\Documents\Web\Lineage2API\app\Contracts\Repositories" />
-      <recent name="C:\Users\user\Documents\Web\Lineage2API\app\Contracts\Repositories\Entity" />
-      <recent name="C:\Users\user\Documents\Web\Lineage2API\app\Contracts" />
     </key>
   </component>
   <component name="RunManager">
@@ -264,7 +180,7 @@
       <workItem from="1583009287412" duration="1136000" />
       <workItem from="1583010924344" duration="5662000" />
       <workItem from="1583074804720" duration="558000" />
-      <workItem from="1583526329472" duration="22824000" />
+      <workItem from="1583526329472" duration="33159000" />
     </task>
     <servers />
   </component>
@@ -283,14 +199,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="488" y="83" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1583726062961" />
-    <state x="437" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1583724950917">
+    <state x="437" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1583802116706">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="437" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1583724950917" />
+    <state x="437" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1583802116706" />
     <state x="413" y="122" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1583726795366">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="122" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1583726795366" />
+    <state x="463" y="122" key="FileChooserDialogImpl" timestamp="1583791162073">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="122" key="FileChooserDialogImpl/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1583791162073" />
     <state x="366" y="198" key="NewPhpClassDialog" timestamp="1583725920126">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -303,9 +223,17 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="391" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1583529638945" />
-    <state x="390" y="0" width="586" height="728" key="find.popup" timestamp="1583553404817">
+    <state x="-1282" y="72" width="1009" height="508" key="dock-window-1" timestamp="1583793046527">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1282" y="72" width="1009" height="508" key="dock-window-1/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1583793046527" />
+    <state x="-1920" y="111" width="1009" height="508" key="dock-window-2" timestamp="1583795424275">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1920" y="111" width="1009" height="508" key="dock-window-2/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1583795424275" />
+    <state x="390" y="0" width="586" height="728" key="find.popup" timestamp="1583795221385">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="390" y="0" width="586" height="728" key="find.popup/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1583553404817" />
+    <state x="390" y="0" width="586" height="728" key="find.popup/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1583795221385" />
   </component>
 </project>

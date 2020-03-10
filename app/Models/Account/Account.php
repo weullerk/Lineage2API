@@ -3,7 +3,7 @@
 
 namespace App\Models\Account;
 
-use \App\Contracts\Model\Account as AccountModelContract;
+use \App\Contracts\Model\Account\Account as AccountModelContract;
 
 class Account implements AccountModelContract
 {
@@ -13,7 +13,7 @@ class Account implements AccountModelContract
     private $accessLevel;
 
     /**
-     * Account constructor.
+     * CreateAccountServiceContractAccountService constructor.
      */
     public function __construct()
     {

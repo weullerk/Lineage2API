@@ -13,7 +13,12 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        //CreateAccountServiceContractAccountService
+
+        $this->app->bind('App\Contracts\Model\Account\Account', 'App\Models\Account\Account');
+        $this->app->bind('App\Contracts\Services\CreateAccountServiceContract', 'App\Services\Account\CreateAccountService');
+        $this->app->bind('App\Contracts\Repositories\Entity\Account', 'App\Repositories\Eloquent\Entity\Account');
+        $this->app->bind('App\Contracts\Repositories\Account', 'App\Repositories\Eloquent\Account');
     }
 
     /**
