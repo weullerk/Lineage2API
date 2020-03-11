@@ -4,7 +4,7 @@
 namespace App\Services\Account;
 
 use \App\Contracts\Services\CreateAccountServiceContract;
-use \App\Contracts\Repositories\Account as AccountRepositoryContract;
+use \App\Contracts\Repositories\AccountRepository as AccountRepositoryContract;
 use \App\DTO\Account\Create as AccountCreateDTO;
 use App\Exceptions\FailureException;
 

@@ -71,7 +71,7 @@ return [
         ],
         'accounts' => [
             'driver' => 'eloquent',
-            'model' => App\Contracts\Repositories\Account::class,
+            'model' => App\Contracts\Repositories\AccountRepository::class,
         ]
 
         // 'users' => [

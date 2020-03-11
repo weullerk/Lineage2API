@@ -1,28 +1,28 @@
 <?php
 
 
-namespace App\Repositories\Eloquent;
+namespace App\Repositories\L2JEloquentMariaDB\Account;
 
+use App\Contracts\Model\Account\AccountModelContract;
 use App\Exceptions\FailureException;
-use App\Repositories\Eloquent\Entity\Account as AccountEloquent;
 
-use App\DTO\Account\AccountCreateDTO;
-use App\Contracts\Repositories\Account as AccountRepositoryContract;
-use App\Contracts\Model\Account\Account as AccountModelContract;
 
-class Account implements AccountRepositoryContract
+use App\Contracts\Repositories\Account\CreateAccountRepositoryContract;
+use App\Contracts\Repositories\Account\AccountEntityContract;
+
+class CreateAccountRepository implements CreateAccountRepositoryContract
 {
     /**
      * Cria uma nova conta e retorna null caso a operação falhe.
      * @param AccountCreateDTO $accountDTO
      * @return AccountCreateDTO
      */
-    public function create(AccountCreateDTO $accountDTO) : AccountModelContract
+    public function create(AccountModelContract $accountModel) : AccountModelContract
     {
-        $account = $this->app->make('AccountEloquent');
-        $account->login = $accountDTO->getLogin();
-        $account->password = $accountDTO->getPassword();
-        $account->email = $accountDTO->getEmail();
+        $account = $this->app->make('AccountEntityContract');
+        $account->login = $accountModel->getLogin();
+        $account->password = $accountModel->getPassword();
+        $account->email = $accountModel->getEmail();
         $account->lastactive = 0;
         $account->accessLevel = 0;
         $account->lastIP = '0.0.0.0';

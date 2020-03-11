@@ -15,10 +15,10 @@ class AppServiceProvider extends ServiceProvider
     {
         //CreateAccountServiceContractAccountService
 
-        $this->app->bind('App\Contracts\Model\Account\Account', 'App\Models\Account\Account');
+        $this->app->bind('App\Contracts\Model\Account\AccountModelContract', 'App\Models\Account\Account');
         $this->app->bind('App\Contracts\Services\CreateAccountServiceContract', 'App\Services\Account\CreateAccountService');
-        $this->app->bind('App\Contracts\Repositories\Entity\Account', 'App\Repositories\Eloquent\Entity\Account');
-        $this->app->bind('App\Contracts\Repositories\Account', 'App\Repositories\Eloquent\Account');
+        $this->app->bind('App\Contracts\Repositories\Entity\AccountEntity', 'App\Repositories\Eloquent\Entity\Account');
+        $this->app->bind('App\Contracts\Repositories\AccountRepository', 'App\Repositories\Eloquent\AccountRepository');
     }
 
     /**

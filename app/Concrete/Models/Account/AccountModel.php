@@ -1,16 +1,19 @@
 <?php
 
 
-namespace App\Models\Account;
+namespace App\Concrete\Models\Account;
 
-use \App\Contracts\Model\Account\Account as AccountModelContract;
+use \App\Contracts\Model\Account\AccountModelContract;
 
 class Account implements AccountModelContract
 {
+    // ['login', 'password', 'email', 'lastactive', 'accessLevel', 'lastIP', 'lastServer'];
     private $login;
     private $password;
     private $email;
     private $accessLevel;
+    private $lastIP;
+    private $lastServer;
 
     /**
      * CreateAccountServiceContractAccountService constructor.
@@ -83,5 +86,35 @@ class Account implements AccountModelContract
         $this->accessLevel = $accessLevel;
     }
 
+    /**
+     * @return mixed
+     */
+    public function getLastIP()
+    {
+        return $this->lastIP;
+    }
 
+    /**
+     * @param mixed $lastIP
+     */
+    public function setLastIP($lastIP): void
+    {
+        $this->lastIP = $lastIP;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getLastServer()
+    {
+        return $this->lastServer;
+    }
+
+    /**
+     * @param mixed $lastServer
+     */
+    public function setLastServer($lastServer): void
+    {
+        $this->lastServer = $lastServer;
+    }
 }

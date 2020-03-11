@@ -13,7 +13,7 @@ class AlterAccountTableAddTimestampColumns extends Migration
      */
     public function up()
     {
-        Schema::table(\App\Repositories\Eloquent\Account::class, function(Blueprint $table) {
+        Schema::table(\App\Repositories\Eloquent\AccountRepository::class, function(Blueprint $table) {
             $table->timestamp();
         });
     }
@@ -25,7 +25,7 @@ class AlterAccountTableAddTimestampColumns extends Migration
      */
     public function down()
     {
-        Schema::table(\App\Repositories\Eloquent\Account::class, function(Blueprint $table) {
+        Schema::table(\App\Repositories\Eloquent\AccountRepository::class, function(Blueprint $table) {
             $table->dropTimestamp();
         });
     }

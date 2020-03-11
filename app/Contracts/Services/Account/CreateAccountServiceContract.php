@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Contracts\Services;
+namespace App\Contracts\Services\Account;
 
 use \App\DTO\Account\Create as AccountCreateDTO;
 
