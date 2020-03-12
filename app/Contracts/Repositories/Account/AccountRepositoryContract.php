@@ -5,7 +5,7 @@ namespace App\Contracts\Repositories\Account;
 
 use App\Contracts\Model\Account\AccountModelContract;
 
-interface CreateAccountRepositoryContract
+interface AccountRepositoryContract
 {
     public function create(AccountModelContract $accountModel) : AccountModelContract;
 }

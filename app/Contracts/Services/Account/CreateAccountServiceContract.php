@@ -3,9 +3,10 @@
 
 namespace App\Contracts\Services\Account;
 
-use \App\DTO\Account\Create as AccountCreateDTO;
+
+use App\Contracts\Model\Account\AccountModelContract;
 
 interface CreateAccountServiceContract
 {
-    public function create(AccountCreateDTO $accountDTO) : AccountCreateDTO;
+    public function create(AccountModelContract $accountModel) : AccountModelContract;
 }

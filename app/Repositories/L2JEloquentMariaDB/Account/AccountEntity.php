@@ -5,9 +5,11 @@ namespace App\Repositories\L2JEloquentMariaDB\Account;
 use App\Contracts\Repositories\Account\AccountEntityContract;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class Account extends Authenticatable implements AccountEntityContract
+class AccountEntity extends Authenticatable implements AccountEntityContract
 {
-    protected $tables = ['login', 'password', 'email', 'lastactive', 'accessLevel', 'lastIP', 'lastServer'];
+    protected $table = 'accounts';
+
+    protected $visible = ['login', 'email', 'lastactive', 'accessLevel', 'lastIP', 'lastServer'];
 
     protected $primaryKey = 'account_name';
 

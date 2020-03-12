@@ -1,16 +1,17 @@
 <?php
 
 
-namespace App\Concrete\Models\Account;
+namespace App\Models\Account;
 
 use \App\Contracts\Model\Account\AccountModelContract;
 
-class Account implements AccountModelContract
+class AccountModel implements AccountModelContract
 {
     // ['login', 'password', 'email', 'lastactive', 'accessLevel', 'lastIP', 'lastServer'];
     private $login;
     private $password;
     private $email;
+    private $lastActive;
     private $accessLevel;
     private $lastIP;
     private $lastServer;
@@ -68,6 +69,22 @@ class Account implements AccountModelContract
     public function setEmail($email): void
     {
         $this->email = $email;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getLastActive()
+    {
+        return $this->lastActive;
+    }
+
+    /**
+     * @param mixed $lastActive
+     */
+    public function setLastActive($lastActive): void
+    {
+        $this->lastActive = $lastActive;
     }
 
     /**

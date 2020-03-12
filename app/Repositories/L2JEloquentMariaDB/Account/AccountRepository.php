@@ -7,19 +7,18 @@ use App\Contracts\Model\Account\AccountModelContract;
 use App\Exceptions\FailureException;
 
 
-use App\Contracts\Repositories\Account\CreateAccountRepositoryContract;
-use App\Contracts\Repositories\Account\AccountEntityContract;
+use App\Contracts\Repositories\Account\AccountRepositoryContract;
 
-class CreateAccountRepository implements CreateAccountRepositoryContract
+class AccountRepository implements AccountRepositoryContract
 {
     /**
      * Cria uma nova conta e retorna null caso a operação falhe.
-     * @param AccountCreateDTO $accountDTO
+     * @param AccountCreateDTO $accountModel
      * @return AccountCreateDTO
      */
     public function create(AccountModelContract $accountModel) : AccountModelContract
     {
-        $account = $this->app->make('AccountEntityContract');
+        $account = app()->make('App\Contracts\Repositories\Account\AccountEntityContract');
         $account->login = $accountModel->getLogin();
         $account->password = $accountModel->getPassword();
         $account->email = $accountModel->getEmail();
@@ -31,11 +30,11 @@ class CreateAccountRepository implements CreateAccountRepositoryContract
         if (!$account->save())
             throw new FailureException("Error ao realizar o cadastro.");
 
-        $accountModel = $this->app->make('AccountModelContract');
-        $accountModel->setLogin($account->login);
-        $accountModel->setPassword($account->password);
-        $accountModel->setEmail($account->email);
+        $accountModel = app()->make('App\Contracts\Model\Account\AccountModelContract');
+        $accountModel->setLastactive($account->lastactive);
         $accountModel->setAccessLevel($account->accessLevel);
+        $accountModel->setLastIP($account->accessLevel);
+        $accountModel->setLastServer($account->lastServer);
 
         return $accountModel;
     }

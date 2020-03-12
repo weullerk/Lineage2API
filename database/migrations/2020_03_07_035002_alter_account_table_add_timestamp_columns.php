@@ -13,8 +13,8 @@ class AlterAccountTableAddTimestampColumns extends Migration
      */
     public function up()
     {
-        Schema::table(\App\Repositories\Eloquent\AccountRepository::class, function(Blueprint $table) {
-            $table->timestamp();
+        Schema::table('accounts', function(Blueprint $table) {
+            $table->timestamps();
         });
     }
 
