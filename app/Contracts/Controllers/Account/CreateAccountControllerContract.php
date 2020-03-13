@@ -3,7 +3,6 @@
 
 namespace App\Contracts\Controllers\Account;
 
-
 use App\Contracts\Requests\Account\CreateAccountRequestContract;
 
 interface CreateAccountControllerContract

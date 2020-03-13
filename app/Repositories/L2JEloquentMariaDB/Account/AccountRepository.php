@@ -4,6 +4,7 @@
 namespace App\Repositories\L2JEloquentMariaDB\Account;
 
 use App\Contracts\Model\Account\AccountModelContract;
+use App\Contracts\Model\Account\ChangeAccountPasswordModelContract;
 use App\Exceptions\FailureException;
 
 
@@ -37,5 +38,13 @@ class AccountRepository implements AccountRepositoryContract
         $accountModel->setLastServer($account->lastServer);
 
         return $accountModel;
+    }
+
+    public function changePassword(AccountModelContract $accountModel): bool
+    {
+        $account = app()->make('App\Contracts\Repositories\Account\AccountEntityContract');
+        $account->where('login', $accountModel->getLogin())->first();
+        $account->password = $accountModel->getPassword();
+        return $account->save();
     }
 }

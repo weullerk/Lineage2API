@@ -28,6 +28,11 @@ class AccountEntity extends Authenticatable implements AccountEntityContract
         return $this->getKey();
     }
 
+    public function getAuthIdentifierName()
+    {
+        return 'login';
+    }
+
     /**
      * @inheritDoc
      */

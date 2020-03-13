@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use AutoMapperPlus\Configuration\AutoMapperConfig;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -29,6 +30,7 @@ class AppServiceProvider extends ServiceProvider
         $this->app->bind('App\Contracts\Repositories\Account\AccountRepositoryContract', 'App\Repositories\L2JEloquentMariaDB\Account\AccountRepository');
         $this->app->bind('App\Contracts\Requests\Account\CreateAccountRequestContract', 'App\Http\Requests\Account\CreateAccountRequest');
         $this->app->bind('App\Contracts\Services\Account\CreateAccountServiceContract', 'App\Services\Account\CreateAccountService');
+
     }
 
     /**

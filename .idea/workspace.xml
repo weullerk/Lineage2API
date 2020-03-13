@@ -3,19 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="815e02b4-7769-4bf1-be36-a8de7ad79627" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Concrete/Models/Account/AccountModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Account/AccountModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Concrete/Repositories/L2JEloquentMariaDB/Account/AccountEntity.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/L2JEloquentMariaDB/Account/AccountEntity.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Concrete/Repositories/L2JEloquentMariaDB/Account/CreateAccountRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/L2JEloquentMariaDB/Account/AccountRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Concrete/Services/Account/CreateAccountService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/Account/CreateAccountService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Concrete/Traits/L2jPasswordEncryter.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Traits/L2jPasswordEncryter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Contracts/Repositories/Account/CreateAccountRepositoryContract.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Contracts/Repositories/Account/AccountRepositoryContract.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Contracts/Services/Account/CreateAccountServiceContract.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Contracts/Services/Account/CreateAccountServiceContract.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Exceptions/Handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Contracts/Controllers/Account/CreateAccountControllerContract.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Contracts/Controllers/Account/CreateAccountControllerContract.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Contracts/Repositories/Account/AccountRepositoryContract.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Contracts/Repositories/Account/AccountRepositoryContract.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Account/CreateAccountController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Account/CreateAccountController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Account/AccountModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Account/AccountModel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_07_035002_alter_account_table_add_timestamp_columns.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_03_07_035002_alter_account_table_add_timestamp_columns.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/L2JEloquentMariaDB/Account/AccountEntity.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/L2JEloquentMariaDB/Account/AccountEntity.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/L2JEloquentMariaDB/Account/AccountRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/L2JEloquentMariaDB/Account/AccountRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Traits/L2jPasswordEncryter.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Traits/L2J/L2jPasswordEncryter.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/en/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/validation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +149,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/lang" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Controllers/Auth" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -163,16 +159,19 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\user\Documents\Web\Lineage2API\resources\lang" />
-      <recent name="C:\Users\user\Documents\Web\Lineage2API\app\DTO\Account" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\Documents\Web\Lineage2API\app\Traits\L2J" />
       <recent name="C:\Users\user\Documents\Web\Lineage2API\app\Http" />
       <recent name="C:\Users\user\Documents\Web\Lineage2API\app" />
       <recent name="C:\Users\user\Documents\Web\Lineage2API\app\Concrete" />
       <recent name="C:\Users\user\Documents\Web\Lineage2API\app\Concrete\Repositories\L2JEloquentMariaDB\Account" />
-      <recent name="C:\Users\user\Documents\Web\Lineage2API\app\Concrete\L2J" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\Documents\Web\Lineage2API\app\Http\Controllers\Auth" />
+      <recent name="C:\Users\user\Documents\Web\Lineage2API\app\Http\Requests\Auth" />
+      <recent name="C:\Users\user\Documents\Web\Lineage2API\app\Contracts\Controllers\Auth" />
+      <recent name="C:\Users\user\Documents\Web\Lineage2API\app\Contracts\Requests\Auth" />
+      <recent name="C:\Users\user\Documents\Web\Lineage2API\app\Services\Account" />
     </key>
   </component>
   <component name="RunManager">
@@ -196,7 +195,8 @@
       <workItem from="1583074804720" duration="558000" />
       <workItem from="1583526329472" duration="34799000" />
       <workItem from="1583856081744" duration="6761000" />
-      <workItem from="1583939358830" duration="26466000" />
+      <workItem from="1583939358830" duration="26648000" />
+      <workItem from="1584033327508" duration="22394000" />
     </task>
     <servers />
   </component>
@@ -211,15 +211,16 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="442" y="174" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1583725909608" />
-    <state x="488" y="83" key="#com.intellij.ide.util.MemberChooser" timestamp="1583988632652">
+    <state x="488" y="83" key="#com.intellij.ide.util.MemberChooser" timestamp="1584050503515">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="488" y="83" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1583889371312" />
-    <state x="488" y="83" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1583988632652" />
-    <state x="437" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1583952779142">
+    <state x="488" y="83" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1584050503515" />
+    <state x="437" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1584076415074">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="437" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1583952779142" />
+    <state x="437" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1584076415074" />
     <state x="413" y="122" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1583948608180">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -228,18 +229,20 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="122" key="FileChooserDialogImpl/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1583791162073" />
-    <state x="366" y="198" key="NewPhpClassDialog" timestamp="1583952092408">
+    <state x="366" y="198" key="NewPhpClassDialog" timestamp="1584077125171">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="366" y="198" key="NewPhpClassDialog/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1583952092408" />
+    <state x="366" y="198" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1584077125171" />
     <state x="517" y="295" key="NewPhpFileDialog" timestamp="1583717848432">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="517" y="295" key="NewPhpFileDialog/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1583717848432" />
-    <state x="391" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1583939412969">
+    <state x="391" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1584035022184">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="391" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728/-1920.0.1920.1040@0.0.1366.728" timestamp="1583939412969" />
+    <state x="391" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1584035022184" />
     <state x="-1714" y="122" width="811" height="508" maximized="true" key="dock-window-1" timestamp="1583950985421">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>

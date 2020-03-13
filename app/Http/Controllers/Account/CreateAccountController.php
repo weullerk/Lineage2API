@@ -26,7 +26,7 @@ class CreateAccountController extends Controller implements CreateAccountControl
         $createAccountService->create($accountModel);
 
         return response()->json([
-            'message' => 'Cadastro realizado com sucesso',
+            'message' => 'Cadastro realizado com sucesso.',
             'data' => $request->all()
         ]);
     }

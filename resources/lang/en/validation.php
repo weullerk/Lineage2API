@@ -133,6 +133,23 @@ return [
         'attribute-name' => [
             'rule-name' => 'custom-message',
         ],
+        'login' => [
+            'required' => 'Login is required.',
+            'alpha_num' => 'Login must contain letters and numbers.',
+            'between' => 'Login must be between :min and :max.',
+            'exists' => 'Login provided wasn\'t found.',
+            'unique' => 'Login provided already exist.'
+        ],
+        'password' => [
+            'required' => 'Password is required.',
+            'alpha_num' => 'Password must contain letters and numbers.',
+            'between' => 'Password must be between :min and :max.'
+        ],
+        'email' => [
+            'required' => 'Email is required.',
+            'email' => 'Email provided is not valid',
+            'unique' => 'Email provided already exist'
+        ]
     ],
 
     /*

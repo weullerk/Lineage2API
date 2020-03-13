@@ -7,7 +7,6 @@ use \App\Contracts\Model\Account\AccountModelContract;
 
 class AccountModel implements AccountModelContract
 {
-    // ['login', 'password', 'email', 'lastactive', 'accessLevel', 'lastIP', 'lastServer'];
     private $login;
     private $password;
     private $email;
@@ -17,7 +16,7 @@ class AccountModel implements AccountModelContract
     private $lastServer;
 
     /**
-     * CreateAccountServiceContractAccountService constructor.
+     *  constructor.
      */
     public function __construct()
     {
