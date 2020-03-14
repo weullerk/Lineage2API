@@ -1,8 +1,8 @@
 <?php
 
 
-namespace App\Http\Requests\Account;
-use App\Contracts\Requests\Account\AuthRequestContract;
+namespace App\Http\Requests\Auth;
+use App\Contracts\Requests\Auth\AuthRequestContract;
 use Illuminate\Foundation\Http\FormRequest;
 
 class AuthRequest extends FormRequest implements AuthRequestContract

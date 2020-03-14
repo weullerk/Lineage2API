@@ -137,7 +137,7 @@ return [
             'required' => 'Login is required.',
             'alpha_num' => 'Login must contain letters and numbers.',
             'between' => 'Login must be between :min and :max.',
-            'exists' => 'Login provided wasn\'t found.',
+            'exists' => 'Login provided was not found.',
             'unique' => 'Login provided already exist.'
         ],
         'password' => [
@@ -147,8 +147,8 @@ return [
         ],
         'email' => [
             'required' => 'Email is required.',
-            'email' => 'Email provided is not valid',
-            'unique' => 'Email provided already exist'
+            'email' => 'Email provided is not valid.',
+            'unique' => 'Email provided already exist.'
         ]
     ],
 
@@ -164,9 +164,6 @@ return [
     */
 
     'attributes' => [
-        'login' => [
-
-        ]
     ],
 
 ];

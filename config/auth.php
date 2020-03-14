@@ -71,7 +71,7 @@ return [
         ],
         'accounts' => [
             'driver' => 'eloquent',
-            'model' => App\Contracts\Repositories\AccountRepository::class,
+            'model' => App\Repositories\L2JEloquentMariaDB\Account\AccountEntity::class,
         ]
 
         // 'users' => [

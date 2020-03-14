@@ -25,9 +25,9 @@ class ChangeAccountPasswordRequest extends FormRequest implements ChangeAccountP
     public function rules()
     {
         return [
-            'old_password' => 'required|alpha_num|between:4,16|unique:accounts,login',
+            'old_password' => 'required|alpha_num|between:4,16',
             'new_password' => 'required|alpha_num|between:4,16',
-            'confirm_password' => 'same:password',
+            'confirm_password' => 'required|alpha_num|between:4,16',
         ];
     }
 }

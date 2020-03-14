@@ -1,17 +1,15 @@
 <?php
 
 
-namespace App\Http\Controllers\Account;
+namespace App\Http\Controllers\Auth;
 
 
-use App\Contracts\Controllers\Account\AuthControllerContract;
-use App\Contracts\Controllers\Account\CreateAccountControllerContract;
-use App\Contracts\Requests\Account\AuthRequestContract;
-use App\Contracts\Requests\Account\CreateAccountRequestContract;
+use App\Contracts\Controllers\Auth\AuthControllerContract;
+use App\Contracts\Requests\Auth\AuthRequestContract;
 use App\Http\Controllers\Controller;
 use App\Traits\L2J\L2jPasswordEncryter;
 
-class CreateAccountController extends Controller implements AuthControllerContract
+class AuthController extends Controller implements AuthControllerContract
 {
     use L2jPasswordEncryter;
 
@@ -21,12 +19,14 @@ class CreateAccountController extends Controller implements AuthControllerContra
 
     public function auth(AuthRequestContract $request)
     {
-        $credentials = [
+        $credentials = array(
             'login' => $request->input('login'),
             'password' => $this->l2jPasswordEncrypt($request->input('password'))
-        ];
+        );
 
-        if (!$token = auth()->attempt($credentials)) {
+
+
+        if (!$token = auth('api')->attempt($credentials)) {
             return response()->json([
                 'message' => 'Usuário e senha não conferem.'
             ], 401);

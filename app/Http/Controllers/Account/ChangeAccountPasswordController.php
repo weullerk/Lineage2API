@@ -17,7 +17,7 @@ class ChangeAccountPasswordController extends Controller implements ChangeAccoun
 
     public function change(ChangeAccountPasswordRequestContract $request)
     {
-        $user = auth()->user();
+        $user = auth('api')->user();
 
         $accountModel = app()->make('App\Contracts\Model\Account\AccountModelContract');
         $accountModel->setLogin($user->login);
@@ -29,7 +29,7 @@ class ChangeAccountPasswordController extends Controller implements ChangeAccoun
         $changeAccountPasswordModel->setConfirmPassword($request->confirm_password);
 
         $changeAccountPasswordService = app()->make('App\Contracts\Services\Account\ChangeAccountPasswordServiceContract');
-        $changeAccountPasswordService->change($accountModel, $changeAccountPasswordModel);
+        $changeAccountPasswordService->changePassword($accountModel, $changeAccountPasswordModel);
 
         return response()->json([
             'message' => 'Senha atualizada com sucesso.',

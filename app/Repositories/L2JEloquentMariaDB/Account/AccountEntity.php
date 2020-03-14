@@ -9,9 +9,9 @@ class AccountEntity extends Authenticatable implements AccountEntityContract
 {
     protected $table = 'accounts';
 
-    protected $visible = ['login', 'email', 'lastactive', 'accessLevel', 'lastIP', 'lastServer'];
+    protected $visible = ['login', 'password', 'email', 'lastactive', 'accessLevel', 'lastIP', 'lastServer'];
 
-    protected $primaryKey = 'account_name';
+    protected $primaryKey = 'login';
 
     protected $keyType = 'string';
 
@@ -38,6 +38,6 @@ class AccountEntity extends Authenticatable implements AccountEntityContract
      */
     public function getJWTCustomClaims()
     {
-        // TODO: Implement getJWTCustomClaims() method.
+        return [];
     }
 }
