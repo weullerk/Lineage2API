@@ -42,7 +42,7 @@ class AccountRepository implements AccountRepositoryContract
 
     public function changePassword(AccountModelContract $accountModel): bool
     {
-        $account = AccountEntity::where('login', $accountModel->getLogin())->first();
+        $account = app()->make('App\Contracts\Repositories\Account\AccountEntityContract')::where('login', $accountModel->getLogin())->first();
         $account->password = $accountModel->getPassword();
         return $account->save();
     }
