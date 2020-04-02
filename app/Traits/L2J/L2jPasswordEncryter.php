@@ -1,8 +1,6 @@
 <?php
 
-
 namespace App\Traits\L2J;
-
 
 trait L2jPasswordEncryter
 {

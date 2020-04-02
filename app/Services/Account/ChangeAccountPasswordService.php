@@ -1,6 +1,5 @@
 <?php
 
-
 namespace App\Services\Account;
 
 use App\Contracts\Model\Account\AccountModelContract;
@@ -10,7 +9,6 @@ use App\Contracts\Services\Account\ChangeAccountPasswordServiceContract;
 use App\Exceptions\FailureException;
 use App\Traits\L2J\L2jPasswordEncryter;
 use Illuminate\Support\Facades\Hash;
-
 
 class ChangeAccountPasswordService implements ChangeAccountPasswordServiceContract
 {

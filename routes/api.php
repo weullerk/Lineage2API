@@ -20,4 +20,6 @@ Route::group(['middleware' => 'jwt.auth', 'prefix' => 'v1'], function() {
 Route::prefix('v1')->group(function() {
     Route::post('account/register', 'App\Contracts\Controllers\Account\CreateAccountControllerContract@create');
     Route::post('auth', 'App\Contracts\Controllers\Auth\AuthControllerContract@auth');
+
+    Route::get('account/verify-account/{login}', 'App\Contracts\Controllers\Account\VerifyAccountControllerContract@verify');
 });
