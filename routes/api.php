@@ -22,4 +22,5 @@ Route::prefix('v1')->group(function() {
     Route::post('auth', 'App\Contracts\Controllers\Auth\AuthControllerContract@auth');
 
     Route::get('account/verify-account/{login}', 'App\Contracts\Controllers\Account\VerifyAccountControllerContract@verify');
+    Route::get('account/verify-email/{email}', 'App\Contracts\Controllers\Account\VerifyEmailControllerContract@verify');
 });

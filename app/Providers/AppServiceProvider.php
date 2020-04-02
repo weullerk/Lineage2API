@@ -27,6 +27,7 @@ class AppServiceProvider extends ServiceProvider
         $this->app->bind('App\Contracts\Controllers\Account\CreateAccountControllerContract', 'App\Http\Controllers\Account\CreateAccountController');
         $this->app->bind('App\Contracts\Controllers\Account\ChangeAccountPasswordControllerContract', 'App\Http\Controllers\Account\ChangeAccountPasswordController');
         $this->app->bind('App\Contracts\Controllers\Account\VerifyAccountControllerContract', 'App\Http\Controllers\Account\VerifyAccountController');
+        $this->app->bind('App\Contracts\Controllers\Account\VerifyEmailControllerContract', 'App\Http\Controllers\Account\VerifyEmailController');
         $this->app->bind('App\Contracts\Controllers\Auth\AuthControllerContract', 'App\Http\Controllers\Auth\AuthController');
 
         $this->app->bind('App\Contracts\Model\Account\AccountModelContract', 'App\Models\Account\AccountModel');
@@ -43,6 +44,7 @@ class AppServiceProvider extends ServiceProvider
         $this->app->bind('App\Contracts\Services\Account\CreateAccountServiceContract', 'App\Services\Account\CreateAccountService');
         $this->app->bind('App\Contracts\Services\Account\ChangeAccountPasswordServiceContract', 'App\Services\Account\ChangeAccountPasswordService');
         $this->app->bind('App\Contracts\Services\Account\VerifyAccountServiceContract', 'App\Services\Account\VerifyAccountService');
+        $this->app->bind('App\Contracts\Services\Account\VerifyEmailServiceContract', 'App\Services\Account\VerifyEmailService');
     }
 
     /**
