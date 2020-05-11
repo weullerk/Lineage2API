@@ -5,8 +5,8 @@ namespace App\Contracts\Services\Account;
 
 
 
-use App\Contracts\Model\Account\AccountModelContract;
-use App\Contracts\Model\Account\ChangeAccountPasswordModelContract;
+use App\Contracts\Models\Account\AccountModelContract;
+use App\Contracts\Models\Account\ChangeAccountPasswordModelContract;
 
 interface ChangeAccountPasswordServiceContract
 {

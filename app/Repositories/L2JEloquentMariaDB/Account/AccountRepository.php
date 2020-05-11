@@ -3,8 +3,8 @@
 
 namespace App\Repositories\L2JEloquentMariaDB\Account;
 
-use App\Contracts\Model\Account\AccountModelContract;
-use App\Contracts\Model\Account\ChangeAccountPasswordModelContract;
+use App\Contracts\Models\Account\AccountModelContract;
+use App\Contracts\Models\Account\ChangeAccountPasswordModelContract;
 use App\Exceptions\FailureException;
 
 
@@ -31,7 +31,6 @@ class AccountRepository implements AccountRepositoryContract
         if (!$account->save())
             throw new FailureException("Error ao realizar o cadastro.");
 
-        $accountModel = app()->make('App\Contracts\Model\Account\AccountModelContract');
         $accountModel->setLastactive($account->lastactive);
         $accountModel->setAccessLevel($account->accessLevel);
         $accountModel->setLastIP($account->accessLevel);
@@ -50,7 +49,7 @@ class AccountRepository implements AccountRepositoryContract
     public function getByLogin(string $login) : AccountModelContract
     {
         $account = app()->make('App\Contracts\Repositories\Account\AccountEntityContract')::where('login', $login)->firstOrFail();
-        $accountModel = app()->make('App\Contracts\Model\Account\AccountModelContract');
+        $accountModel = app()->make('App\Contracts\Models\Account\AccountModelContract');
         $accountModel->setLogin($account->login);
         $accountModel->setPassword($account->password);
         $accountModel->setEmail($account->email);
@@ -65,7 +64,7 @@ class AccountRepository implements AccountRepositoryContract
     public function getByEmail(string $email) : AccountModelContract
     {
         $account = app()->make('App\Contracts\Repositories\Account\AccountEntityContract')::where('email', $email)->firstOrFail();
-        $accountModel = app()->make('App\Contracts\Model\Account\AccountModelContract');
+        $accountModel = app()->make('App\Contracts\Models\Account\AccountModelContract');
         $accountModel->setLogin($account->login);
         $accountModel->setPassword($account->password);
         $accountModel->setEmail($account->email);

@@ -2,7 +2,7 @@
 
 namespace App\Services\Account;
 
-use App\Contracts\Model\Account\AccountModelContract;
+use App\Contracts\Models\Account\AccountModelContract;
 use App\Contracts\Repositories\Account\AccountRepositoryContract;
 use App\Contracts\Services\Account\CreateAccountServiceContract;
 use App\Traits\L2J\L2jPasswordEncryter;

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Contracts\Model\Account;
+namespace App\Contracts\Models\Account;
 
 
 interface ChangeAccountPasswordModelContract

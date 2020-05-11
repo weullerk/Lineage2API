@@ -3,11 +3,11 @@
 
 namespace App\Models\Account;
 
-use App\Contracts\Models\Account\ChangeAccountPasswordModelContract;
 
-class ChangeAccountPasswordModel implements ChangeAccountPasswordModelContract
+
+class ResetPasswordModel implements ResetPasswordModelContract
 {
-    private $oldPassword;
+    private $email;
     private $newPassword;
     private $confirmPassword;
 
@@ -21,17 +21,17 @@ class ChangeAccountPasswordModel implements ChangeAccountPasswordModelContract
     /**
      * @return mixed
      */
-    public function getOldPassword()
+    public function getEmail()
     {
-        return $this->oldPassword;
+        return $this->email;
     }
 
     /**
-     * @param mixed $oldPassword
+     * @param mixed $email
      */
-    public function setOldPassword($oldPassword): void
+    public function setEmail($email): void
     {
-        $this->oldPassword = $oldPassword;
+        $this->email = $email;
     }
 
     /**

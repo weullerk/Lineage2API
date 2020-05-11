@@ -19,11 +19,11 @@ class ChangeAccountPasswordController extends Controller implements ChangeAccoun
     {
         $user = auth('api')->user();
 
-        $accountModel = app()->make('App\Contracts\Model\Account\AccountModelContract');
+        $accountModel = app()->make('App\Contracts\Models\Account\AccountModelContract');
         $accountModel->setLogin($user->login);
         $accountModel->setPassword($user->password);
 
-        $changeAccountPasswordModel = app()->make('App\Contracts\Model\Account\ChangeAccountPasswordModelContract');
+        $changeAccountPasswordModel = app()->make('App\Contracts\Models\Account\ChangeAccountPasswordModelContract');
         $changeAccountPasswordModel->setOldPassword($request->old_password);
         $changeAccountPasswordModel->setNewPassword($request->new_password);
         $changeAccountPasswordModel->setConfirmPassword($request->confirm_password);

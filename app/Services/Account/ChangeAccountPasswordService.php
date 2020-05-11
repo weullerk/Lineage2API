@@ -2,8 +2,8 @@
 
 namespace App\Services\Account;
 
-use App\Contracts\Model\Account\AccountModelContract;
-use App\Contracts\Model\Account\ChangeAccountPasswordModelContract;
+use App\Contracts\Models\Account\AccountModelContract;
+use App\Contracts\Models\Account\ChangeAccountPasswordModelContract;
 use App\Contracts\Repositories\Account\AccountRepositoryContract;
 use App\Contracts\Services\Account\ChangeAccountPasswordServiceContract;
 use App\Exceptions\FailureException;

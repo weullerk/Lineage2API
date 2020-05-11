@@ -17,7 +17,7 @@ class CreateAccountController extends Controller implements CreateAccountControl
 
     public function create(CreateAccountRequestContract $request)
     {
-        $accountModel = app()->make('App\Contracts\Model\Account\AccountModelContract');
+        $accountModel = app()->make('App\Contracts\Models\Account\AccountModelContract');
         $accountModel->setLogin($request->input('login'));
         $accountModel->setPassword($request->input('password'));
         $accountModel->setEmail($request->input('email'));

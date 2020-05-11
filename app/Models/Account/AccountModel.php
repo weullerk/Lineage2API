@@ -3,7 +3,7 @@
 
 namespace App\Models\Account;
 
-use \App\Contracts\Model\Account\AccountModelContract;
+use \App\Contracts\Models\Account\AccountModelContract;
 
 class AccountModel implements AccountModelContract
 {
