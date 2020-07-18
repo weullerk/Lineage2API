@@ -37,6 +37,7 @@ class RecoveryPasswordMail extends Mailable implements RecoveryPasswordMailContr
      */
     public function build()
     {
-        return $this->view('emails.account.recovery-password');
+        return $this->from(config('mail.from.address'), config('app.name'))
+            ->view('emails.account.recovery-password');
     }
 }

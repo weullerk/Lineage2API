@@ -14,7 +14,7 @@ class ResetPasswordController extends Controller implements ResetPasswordControl
     {
         $service = app('App\Contracts\Services\Account\ResetPasswordServiceContract');
 
-        $resetPasswordModel = $service = app('App\Contracts\Models\Account\ResetPasswordModelContract');
+        $resetPasswordModel = app('App\Contracts\Models\Account\ResetPasswordModelContract');
         $resetPasswordModel->setEmail($request->input('email'));
         $resetPasswordModel->setNewPassword($request->input('password'));
         $resetPasswordModel->setConfirmPassword($request->input('confirm_password'));

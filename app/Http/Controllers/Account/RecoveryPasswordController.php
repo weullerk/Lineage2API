@@ -13,6 +13,6 @@ class RecoveryPasswordController extends Controller implements RecoveryPasswordC
     {
         $service = app('App\Contracts\Services\Account\RecoveryPasswordServiceContract');
         $service->recovery($request->input('email'));
-        return response(['message' => 'Um email contendo o link para criar uma nova senha para sua conta foi enviado para o seu email.']);
+        return response(['message' => 'Um email com o link para registrar uma nova senha foi enviado para o seu email.']);
     }
 }

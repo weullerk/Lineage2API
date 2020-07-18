@@ -56,7 +56,7 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
+        'address' => env('MAIL_FROM_ADDRESS', 'weuller.krysthian@gmail.com'),
         'name' => env('MAIL_FROM_NAME', 'Example'),
     ],
 
@@ -130,7 +130,5 @@ return [
     | for simpler reading. Otherwise, the default channel will be used.
     |
     */
-
-    'log_channel' => env('MAIL_LOG_CHANNEL'),
 
 ];

@@ -35,19 +35,14 @@ class RecoveryPasswordService implements RecoveryPasswordServiceContract
         $passwordRecoveryRepository = app('App\Contracts\Repositories\PasswordRecovery\PasswordRecoveryRepositoryContract');
         $passwordRecoveryRepository->create($passwordRecoveryModel);
 
-        $resetPasswordEndpoint = config('config.reset_password_endpoint');
-        if ($resetPasswordEndpoint[strlen($resetPasswordEndpoint) - 1] != '/') {
-            $resetPasswordEndpoint = $resetPasswordEndpoint . '/';
-        }
-
-        $urlToResetPassword = config('site') . $resetPasswordEndpoint . $token;
+        $urlToResetPassword = config('config.site') . config('config.reset_password_endpoint') . $token;
 
         $recoveryPasswordMail = app()->makeWith(
             'App\Contracts\Mails\RecoveryPassword\RecoveryPasswordMailContract',
             ['login' => $account->getLogin(), 'url' => $urlToResetPassword]
         );
 
-        Mail::to(['name' => $account->getLogin(), 'email' => $account->getEmail()])->send($recoveryPasswordMail);
+        Mail::to($account->getEmail())->send($recoveryPasswordMail);
         return true;
     }
 }

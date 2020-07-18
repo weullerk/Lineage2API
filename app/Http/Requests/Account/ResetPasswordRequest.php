@@ -25,9 +25,9 @@ class ResetPasswordRequest extends FormRequest implements ResetPasswordRequestCo
     public function rules()
     {
         return [
-            'email' => 'required|email|unique:accounts,email',
+            'email' => 'required|email|exists:accounts,email',
             'password' => 'required|alpha_num|between:4,16',
-            'confirm_password' => 'same:password'
+            'confirm_password' => 'required|alpha_num|between:4,16'
         ];
     }
 }

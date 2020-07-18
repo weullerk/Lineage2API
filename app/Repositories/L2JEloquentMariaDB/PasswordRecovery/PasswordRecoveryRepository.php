@@ -6,6 +6,7 @@ namespace App\Repositories\L2JEloquentMariaDB\PasswordRecovery;
 
 use App\Contracts\Models\PasswordRecovery\PasswordRecoveryModelContract;
 use App\Contracts\Repositories\PasswordRecovery\PasswordRecoveryRepositoryContract;
+use phpDocumentor\Reflection\Type;
 
 class PasswordRecoveryRepository implements PasswordRecoveryRepositoryContract
 {
@@ -32,12 +33,13 @@ class PasswordRecoveryRepository implements PasswordRecoveryRepositoryContract
 
     public function getByToken(string $token): PasswordRecoveryModelContract
     {
-        $entity = app('App\Contracts\Repositories\PasswordRecovery\PasswordRecoveryEntityContract')::where('token', $token);
+        $entity = app('App\Contracts\Repositories\PasswordRecovery\PasswordRecoveryEntityContract')::where('token', $token)->get()->first();
+
         $model = app('App\Contracts\Models\PasswordRecovery\PasswordRecoveryModelContract');
-        $model->setId($model->id);
+        $model->setId($entity->id);
         $model->setLogin($entity->login);
         $model->setToken($entity->token);
-        $model->setExpirationTime($entity->expirationTime);
+        $model->setExpirationTime($entity->expiration_time);
         $model->setActive($entity->active);
 
         return $model;

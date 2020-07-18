@@ -438,28 +438,6 @@
 <body class="full-padding" style="margin: 0;padding: 0;-webkit-text-size-adjust: 100%;">
 <!--<![endif]-->
 <table class="wrapper" style="border-collapse: collapse;table-layout: fixed;min-width: 320px;width: 100%;background-color: #f0f0f0;" cellpadding="0" cellspacing="0" role="presentation"><tbody><tr><td>
-            <div role="banner">
-                <div class="preheader" style="Margin: 0 auto;max-width: 560px;min-width: 280px; width: 280px;width: calc(28000% - 167440px);">
-                    <div style="border-collapse: collapse;display: table;width: 100%;">
-                        <!--[if (mso)|(IE)]><table align="center" class="preheader" cellpadding="0" cellspacing="0" role="presentation"><tr><td style="width: 280px" valign="top"><![endif]-->
-                        <div class="snippet" style="display: table-cell;Float: left;font-size: 12px;line-height: 19px;max-width: 280px;min-width: 140px; width: 140px;width: calc(14000% - 78120px);padding: 10px 0 5px 0;color: #bdbdbd;font-family: Ubuntu,sans-serif;">
-
-                        </div>
-                        <!--[if (mso)|(IE)]></td><td style="width: 280px" valign="top"><![endif]-->
-                        <div class="webversion" style="display: table-cell;Float: left;font-size: 12px;line-height: 19px;max-width: 280px;min-width: 139px; width: 139px;width: calc(14100% - 78680px);padding: 10px 0 5px 0;text-align: right;color: #bdbdbd;font-family: Ubuntu,sans-serif;">
-
-                        </div>
-                        <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
-                    </div>
-                </div>
-                <div class="header" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);" id="emb-email-header-container">
-                    <!--[if (mso)|(IE)]><table align="center" class="header" cellpadding="0" cellspacing="0" role="presentation"><tr><td style="width: 600px"><![endif]-->
-                    <div class="logo emb-logo-margin-box" style="font-size: 26px;line-height: 32px;Margin-top: 6px;Margin-bottom: 20px;color: #c3ced9;font-family: Roboto,Tahoma,sans-serif;Margin-left: 20px;Margin-right: 20px;" align="center">
-                        <div class="logo-center" align="center" id="emb-email-header"><img style="display: block;height: auto;width: 100%;border: 0;max-width: 439px;" src="{{ $logoSrc }}" alt="" width="439" /></div>
-                    </div>
-                    <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
-                </div>
-            </div>
             <div>
                 <div class="layout one-col fixed-width stack" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
                     <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #ffffff;">
@@ -539,13 +517,7 @@
                     <div class="layout one-col email-footer" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
                         <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;">
                             <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-email-footer"><td style="width: 600px;" class="w560"><![endif]-->
-                            <div class="column" style="text-align: left;font-size: 12px;line-height: 19px;color: #bdbdbd;font-family: Ubuntu,sans-serif;">
-                                <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 10px;Margin-bottom: 10px;">
-                                    <div style="font-size: 12px;line-height: 19px;">
-                                        <span><preferences style="text-decoration: underline;" lang="en">Preferences</preferences>&nbsp;&nbsp;|&nbsp;&nbsp;</span><unsubscribe style="text-decoration: underline;">Unsubscribe</unsubscribe>
-                                    </div>
-                                </div>
-                            </div>
+
                             <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
                         </div>
                     </div>

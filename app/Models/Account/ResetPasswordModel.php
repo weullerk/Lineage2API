@@ -5,6 +5,8 @@ namespace App\Models\Account;
 
 
 
+use App\Contracts\Models\Account\ResetPasswordModelContract;
+
 class ResetPasswordModel implements ResetPasswordModelContract
 {
     private $email;
@@ -21,7 +23,7 @@ class ResetPasswordModel implements ResetPasswordModelContract
     /**
      * @return mixed
      */
-    public function getEmail()
+    public function getEmail() : string
     {
         return $this->email;
     }
@@ -37,7 +39,7 @@ class ResetPasswordModel implements ResetPasswordModelContract
     /**
      * @return mixed
      */
-    public function getNewPassword()
+    public function getNewPassword() : string
     {
         return $this->newPassword;
     }
@@ -53,7 +55,7 @@ class ResetPasswordModel implements ResetPasswordModelContract
     /**
      * @return mixed
      */
-    public function getConfirmPassword()
+    public function getConfirmPassword() : string
     {
         return $this->confirmPassword;
     }

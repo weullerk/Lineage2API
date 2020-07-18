@@ -21,7 +21,7 @@ class ResetPasswordService implements ResetPasswordServiceContract
         $passwordRecoveryModel = $passwordRecoveryRepository->getByToken($token);
 
         $accountRepository = app('App\Contracts\Repositories\Account\AccountRepositoryContract');
-        $accountModel = $accountRepository->getByLogin($passwordRecoveryRepository->getLogin());
+        $accountModel = $accountRepository->getByLogin($passwordRecoveryModel->getLogin());
 
         if ($resetPasswordModel->getNewPassword() != $resetPasswordModel->getConfirmPassword())
             throw new FailureException("A confirmação de senha falhou.");
@@ -34,7 +34,8 @@ class ResetPasswordService implements ResetPasswordServiceContract
             throw new FailureException("O token informado já foi utilizado!");
         }
 
-        $expirationTimeTimestamp = Carbon::createFromTimestamp($passwordRecoveryModel->getExpirationTime());
+        $expirationTimeTimestamp = Carbon::createFromDate($passwordRecoveryModel->getExpirationTime());
+
         $actualTimestamp = Carbon::now();
         if ($actualTimestamp->isAfter($expirationTimeTimestamp)) {
             throw new FailureException("O token expirou! Tente novamente.");
