@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Account;
 
 use App\Contracts\Controllers\Account\VerifyAccountControllerContract;
 use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 use Illuminate\Support\Facades\Validator;
 
@@ -14,8 +15,9 @@ class VerifyAccountController extends Controller implements VerifyAccountControl
     {
     }
 
-    public function verify(string $login)
+    public function verify(Request $request)
     {
+        $login = $request->input('login');
         $validator = Validator::make(['login' => $login], [
             'login' => 'required|alpha_num|between:4,16'
         ]);

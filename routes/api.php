@@ -18,11 +18,11 @@ Route::group(['middleware' => 'jwt.auth', 'prefix' => 'v1'], function() {
 });
 
 Route::prefix('v1')->group(function() {
-    Route::post('account/register', 'App\Contracts\Controllers\Account\CreateAccountControllerContract@create');
     Route::post('auth', 'App\Contracts\Controllers\Auth\AuthControllerContract@auth');
 
-    Route::get('account/verify-account/{login}', 'App\Contracts\Controllers\Account\VerifyAccountControllerContract@verify');
-    Route::get('account/verify-email/{email}', 'App\Contracts\Controllers\Account\VerifyEmailControllerContract@verify');
+    Route::get('account/verify-account', 'App\Contracts\Controllers\Account\VerifyAccountControllerContract@verify');
+    Route::get('account/verify-email', 'App\Contracts\Controllers\Account\VerifyEmailControllerContract@verify');
     Route::get('account/recovery-password', 'App\Contracts\Controllers\Account\RecoveryPasswordControllerContract@recovery');
     Route::post('account/reset-password/{token}', 'App\Contracts\Controllers\Account\ResetPasswordControllerContract@reset');
+    Route::post('account/register', 'App\Contracts\Controllers\Account\CreateAccountControllerContract@create');
 });

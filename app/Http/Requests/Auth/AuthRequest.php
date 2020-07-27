@@ -22,11 +22,10 @@ class AuthRequest extends FormRequest implements AuthRequestContract
      *
      * @return array
      */
-    // todo fix confirm_password that is not validating
     public function rules()
     {
         return [
-            'login' => 'required|alpha_num|between:4,16|exists:accounts,login',
+            'username' => 'required|alpha_num|between:4,16|exists:accounts,login',
             'password' => 'required|alpha_num|between:4,16',
         ];
     }

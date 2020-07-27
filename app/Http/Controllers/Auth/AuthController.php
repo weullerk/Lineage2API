@@ -20,7 +20,7 @@ class AuthController extends Controller implements AuthControllerContract
     public function auth(AuthRequestContract $request)
     {
         $credentials = array(
-            'login' => $request->input('login'),
+            'login' => $request->input('username'),
             'password' => $this->l2jPasswordEncrypt($request->input('password'))
         );
 
@@ -33,8 +33,8 @@ class AuthController extends Controller implements AuthControllerContract
         }
 
         return response()->json([
-            'token' => $token,
-            'message' => 'Autenticação realizada com sucesso'
+            'user' => $request->input('username'),
+            'token' => $token
         ]);
     }
 

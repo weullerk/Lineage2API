@@ -2,17 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="815e02b4-7769-4bf1-be36-a8de7ad79627" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Lineage2API.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Lineage2API.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Account/RecoveryPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Account/RecoveryPasswordController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Account/ResetPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Account/ResetPasswordController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/Account/ResetPasswordRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/Account/ResetPasswordRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Mails/RecoveryPassword/RecoveryPasswordMail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Mails/RecoveryPassword/RecoveryPasswordMail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Account/ResetPasswordModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Account/ResetPasswordModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/L2JEloquentMariaDB/PasswordRecovery/PasswordRecoveryRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/L2JEloquentMariaDB/PasswordRecovery/PasswordRecoveryRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/Account/RecoveryPasswordService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/Account/RecoveryPasswordService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/Account/ResetPasswordService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/Account/ResetPasswordService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/mail.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/mail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/emails/account/recovery-password.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/emails/account/recovery-password.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Contracts/Controllers/Account/VerifyAccountControllerContract.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Contracts/Controllers/Account/VerifyAccountControllerContract.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Contracts/Controllers/Account/VerifyEmailControllerContract.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Contracts/Controllers/Account/VerifyEmailControllerContract.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Account/VerifyAccountController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Account/VerifyAccountController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Account/VerifyEmailController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Account/VerifyEmailController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/Auth/AuthRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/Auth/AuthRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -137,6 +138,8 @@
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-util" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php56" />
       <path value="$PROJECT_DIR$/vendor/lcobucci/jwt" />
+      <path value="$PROJECT_DIR$/vendor/asm89/stack-cors" />
+      <path value="$PROJECT_DIR$/vendor/fruitcake/laravel-cors" />
     </include_path>
   </component>
   <component name="ProjectId" id="1YUtwNii4GhB7g5tU4Z5oft1QGc" />
@@ -227,7 +230,9 @@
       <workItem from="1593614305861" duration="640000" />
       <workItem from="1594918169478" duration="4165000" />
       <workItem from="1594930152594" duration="4031000" />
-      <workItem from="1595101219157" duration="11632000" />
+      <workItem from="1595101219157" duration="12248000" />
+      <workItem from="1595526233609" duration="3411000" />
+      <workItem from="1595851709631" duration="2644000" />
     </task>
     <servers />
   </component>
@@ -242,18 +247,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="122" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1594932557106" />
-    <state x="391" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1595101647987">
+    <state x="391" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1595852099133">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="391" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1595101647987" />
+    <state x="391" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1595852099133" />
     <state x="390" y="0" width="710" height="728" key="find.popup" timestamp="1595115417615">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="390" y="0" width="710" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1595115417615" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1595115279224">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1595526878296">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1595115279224" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1595526878296" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

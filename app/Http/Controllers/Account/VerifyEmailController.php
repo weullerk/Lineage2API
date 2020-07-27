@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Account;
 
 use App\Contracts\Controllers\Account\VerifyEmailControllerContract;
 use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 use Illuminate\Support\Facades\Validator;
 
@@ -14,8 +15,9 @@ class VerifyEmailController extends Controller implements VerifyEmailControllerC
     {
     }
 
-    public function verify(string $email)
+    public function verify(Request $request)
     {
+        $email = $request->input('email');
         $validator = Validator::make(['email' => $email], [
             'email' => 'required|email'
         ]);
