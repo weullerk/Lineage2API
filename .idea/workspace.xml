@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="815e02b4-7769-4bf1-be36-a8de7ad79627" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Lineage2API.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Lineage2API.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Contracts/Controllers/Account/VerifyAccountControllerContract.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Contracts/Controllers/Account/VerifyAccountControllerContract.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Contracts/Controllers/Account/VerifyEmailControllerContract.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Contracts/Controllers/Account/VerifyEmailControllerContract.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Account/VerifyAccountController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Account/VerifyAccountController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Account/VerifyEmailController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Account/VerifyEmailController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/Auth/AuthRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/Auth/AuthRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,7 +222,7 @@
       <workItem from="1594930152594" duration="4031000" />
       <workItem from="1595101219157" duration="12248000" />
       <workItem from="1595526233609" duration="3411000" />
-      <workItem from="1595851709631" duration="2644000" />
+      <workItem from="1595851709631" duration="5483000" />
     </task>
     <servers />
   </component>

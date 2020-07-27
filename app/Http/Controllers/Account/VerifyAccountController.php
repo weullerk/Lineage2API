@@ -30,12 +30,12 @@ class VerifyAccountController extends Controller implements VerifyAccountControl
 
         if ($verifyAccountService->verify($login)) {
             return response()->json([
-                'exist' => true
+                'exists' => true
             ]);
         }
 
         return response()->json([
-            'exist' => false
+            'exists' => false
         ]);
     }
 

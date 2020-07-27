@@ -30,12 +30,12 @@ class VerifyEmailController extends Controller implements VerifyEmailControllerC
 
         if ($verifyEmailService->verify($email)) {
             return response()->json([
-                'exist' => true
+                'exists' => true
             ]);
         }
 
         return response()->json([
-            'exist' => false
+            'exists' => false
         ]);
     }
 
