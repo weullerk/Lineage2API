@@ -24,5 +24,5 @@ Route::prefix('v1')->group(function() {
     Route::get('account/verify-email', 'App\Contracts\Controllers\Account\VerifyEmailControllerContract@verify');
     Route::get('account/recovery-password', 'App\Contracts\Controllers\Account\RecoveryPasswordControllerContract@recovery');
     Route::post('account/reset-password/{token}', 'App\Contracts\Controllers\Account\ResetPasswordControllerContract@reset');
-    Route::post('account/register', 'App\Contracts\Controllers\Account\CreateAccountControllerContract@create');
+    Route::post('account/create', 'App\Contracts\Controllers\Account\CreateAccountControllerContract@create');
 });

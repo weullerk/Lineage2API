@@ -22,13 +22,12 @@ class CreateAccountRequest extends FormRequest implements CreateAccountRequestCo
      *
      * @return array
      */
-    // todo fix confirm_password that is not validating
     public function rules()
     {
         return [
             'login' => 'required|alpha_num|between:4,16|unique:accounts,login',
             'password' => 'required|alpha_num|between:4,16',
-            'confirm_password_' => 'same:password',
+            'confirm_password' => 'required|alpha_num|between:4,16',
             'email' => 'required|email|unique:accounts,email'
         ];
     }

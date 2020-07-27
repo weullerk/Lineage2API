@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="815e02b4-7769-4bf1-be36-a8de7ad79627" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Account/VerifyAccountController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Account/VerifyAccountController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Account/VerifyEmailController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Account/VerifyEmailController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Account/CreateAccountController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Account/CreateAccountController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/Account/CreateAccountRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/Account/CreateAccountRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Account/AccountModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Account/AccountModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Account/CreateAccountService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/Account/CreateAccountService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,7 +225,7 @@
       <workItem from="1594930152594" duration="4031000" />
       <workItem from="1595101219157" duration="12248000" />
       <workItem from="1595526233609" duration="3411000" />
-      <workItem from="1595851709631" duration="5483000" />
+      <workItem from="1595851709631" duration="10580000" />
     </task>
     <servers />
   </component>
@@ -233,6 +236,14 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.env" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="485" y="83" key="#com.intellij.ide.util.MemberChooser" timestamp="1595877113220">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="485" y="83" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1595877113220" />
+    <state x="413" y="122" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1595877446004">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="122" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1595877446004" />
     <state x="463" y="122" key="FileChooserDialogImpl" timestamp="1594932557106">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -245,10 +256,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="390" y="0" width="710" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1595115417615" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1595526878296">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1595876731550">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1595526878296" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1595876731550" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

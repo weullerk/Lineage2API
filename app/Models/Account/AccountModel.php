@@ -9,6 +9,7 @@ class AccountModel implements AccountModelContract
 {
     private $login;
     private $password;
+    private $confirmPassword;
     private $email;
     private $lastActive;
     private $accessLevel;
@@ -52,6 +53,22 @@ class AccountModel implements AccountModelContract
     public function setPassword($password): void
     {
         $this->password = $password;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getConfirmPassword()
+    {
+        return $this->confirmPassword;
+    }
+
+    /**
+     * @param mixed $confirmPassword
+     */
+    public function setConfirmPassword($confirmPassword): void
+    {
+        $this->confirmPassword = $confirmPassword;
     }
 
     /**

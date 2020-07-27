@@ -20,6 +20,7 @@ class CreateAccountController extends Controller implements CreateAccountControl
         $accountModel = app()->make('App\Contracts\Models\Account\AccountModelContract');
         $accountModel->setLogin($request->input('login'));
         $accountModel->setPassword($request->input('password'));
+        $accountModel->setConfirmPassword($request->input('confirm_password'));
         $accountModel->setEmail($request->input('email'));
 
         $createAccountService = app()->make('App\Contracts\Services\Account\CreateAccountServiceContract');
