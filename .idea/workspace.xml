@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="815e02b4-7769-4bf1-be36-a8de7ad79627" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Account/CreateAccountController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Account/CreateAccountController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/Account/CreateAccountRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/Account/CreateAccountRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Account/AccountModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Account/AccountModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/Account/CreateAccountService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/Account/CreateAccountService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Contracts/Controllers/Account/ResetPasswordControllerContract.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Contracts/Controllers/Account/ResetPasswordControllerContract.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Account/ResetPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Account/ResetPasswordController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -225,7 +223,7 @@
       <workItem from="1594930152594" duration="4031000" />
       <workItem from="1595101219157" duration="12248000" />
       <workItem from="1595526233609" duration="3411000" />
-      <workItem from="1595851709631" duration="10580000" />
+      <workItem from="1595851709631" duration="27099000" />
     </task>
     <servers />
   </component>
@@ -256,10 +254,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="390" y="0" width="710" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1595115417615" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1595876731550">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1596140293322">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1595876731550" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1596140293322" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

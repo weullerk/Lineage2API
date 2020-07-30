@@ -10,8 +10,10 @@ use Illuminate\Http\Request;
 class ResetPasswordController extends Controller implements ResetPasswordControllerContract
 {
 
-    public function reset($token, ResetPasswordRequestContract $request)
+    public function reset(ResetPasswordRequestContract $request)
     {
+        $token = $request->input('token');
+
         $service = app('App\Contracts\Services\Account\ResetPasswordServiceContract');
 
         $resetPasswordModel = app('App\Contracts\Models\Account\ResetPasswordModelContract');
