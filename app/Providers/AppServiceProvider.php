@@ -31,6 +31,7 @@ class AppServiceProvider extends ServiceProvider
         $this->app->bind('App\Contracts\Controllers\Account\RecoveryPasswordControllerContract', 'App\Http\Controllers\Account\RecoveryPasswordController');
         $this->app->bind('App\Contracts\Controllers\Account\ResetPasswordControllerContract', 'App\Http\Controllers\Account\ResetPasswordController');
         $this->app->bind('App\Contracts\Controllers\Auth\AuthControllerContract', 'App\Http\Controllers\Auth\AuthController');
+        $this->app->bind('App\Contracts\Controllers\Ranking\RankingControllerContract', 'App\Http\Controllers\Ranking\RankingController');
 
         $this->app->bind('App\Contracts\Mails\RecoveryPassword\RecoveryPasswordMailContract', 'App\Mails\RecoveryPassword\RecoveryPasswordMail');
 
@@ -38,12 +39,15 @@ class AppServiceProvider extends ServiceProvider
         $this->app->bind('App\Contracts\Models\Account\ChangeAccountPasswordModelContract', 'App\Models\Account\ChangeAccountPasswordModel');
         $this->app->bind('App\Contracts\Models\Account\ResetPasswordModelContract', 'App\Models\Account\ResetPasswordModel');
         $this->app->bind('App\Contracts\Models\PasswordRecovery\PasswordRecoveryModelContract', 'App\Models\PasswordRecovery\PasswordRecoveryModel');
+        $this->app->bind('App\Contracts\Models\Ranking\RankingModelContract', 'App\Models\Ranking\RankingModel');
 
         $this->app->bind('App\Contracts\Repositories\Account\AccountEntityContract', 'App\Repositories\L2JEloquentMariaDB\Account\AccountEntity');
         $this->app->bind('App\Contracts\Repositories\PasswordRecovery\PasswordRecoveryEntityContract', 'App\Repositories\L2JEloquentMariaDB\PasswordRecovery\PasswordRecoveryEntity');
+        $this->app->bind('App\Contracts\Repositories\Character\CharacterEntityContract', 'App\Repositories\L2JEloquentMariaDB\Character\CharacterEntity');
 
         $this->app->bind('App\Contracts\Repositories\Account\AccountRepositoryContract', 'App\Repositories\L2JEloquentMariaDB\Account\AccountRepository');
         $this->app->bind('App\Contracts\Repositories\PasswordRecovery\PasswordRecoveryRepositoryContract', 'App\Repositories\L2JEloquentMariaDB\PasswordRecovery\PasswordRecoveryRepository');
+        $this->app->bind('App\Contracts\Repositories\Ranking\RankingRepositoryContract', 'App\Repositories\L2JEloquentMariaDB\Ranking\RankingRepository');
 
         $this->app->bind('App\Contracts\Requests\Account\CreateAccountRequestContract', 'App\Http\Requests\Account\CreateAccountRequest');
         $this->app->bind('App\Contracts\Requests\Account\ChangeAccountPasswordRequestContract', 'App\Http\Requests\Account\ChangeAccountPasswordRequest');
@@ -57,6 +61,7 @@ class AppServiceProvider extends ServiceProvider
         $this->app->bind('App\Contracts\Services\Account\VerifyEmailServiceContract', 'App\Services\Account\VerifyEmailService');
         $this->app->bind('App\Contracts\Services\Account\RecoveryPasswordServiceContract', 'App\Services\Account\RecoveryPasswordService');
         $this->app->bind('App\Contracts\Services\Account\ResetPasswordServiceContract', 'App\Services\Account\ResetPasswordService');
+        $this->app->bind('App\Contracts\Services\Ranking\RankingServiceContract', 'App\Services\Ranking\RankingService');
     }
 
     /**

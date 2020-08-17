@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="815e02b4-7769-4bf1-be36-a8de7ad79627" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Contracts/Controllers/Account/ResetPasswordControllerContract.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Contracts/Controllers/Account/ResetPasswordControllerContract.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Account/ResetPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Account/ResetPasswordController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,8 +28,27 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="l2raklion@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="l2raklion@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="l2raklion@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="l2raklion: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+      </path>
+    </expand>
     <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Lineage2API" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -143,10 +161,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Repositories/L2JEloquentMariaDB/Character" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -156,19 +175,19 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Lineage2API\app\Repositories\L2JEloquentMariaDB\Character" />
+      <recent name="C:\xampp\htdocs\Lineage2API\app\Contracts\Repositories\Characters" />
+      <recent name="C:\xampp\htdocs\Lineage2API\resources\views" />
+      <recent name="C:\Users\user\Documents\Web\Lineage2API\app\Models\Account" />
+      <recent name="C:\Users\user\Documents\Web\Lineage2API\app\Contracts\Model\Account" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\user\Documents\Web\Lineage2API\resources\views" />
       <recent name="C:\Users\user\Documents\Web\Lineage2API\app\Http" />
       <recent name="C:\Users\user\Documents\Web\Lineage2API\app\Contracts\Repositories\PasswordRecovery" />
       <recent name="C:\Users\user\Documents\Web\Lineage2API\app\Repositories\L2JEloquentMariaDB\PasswordRecovery" />
       <recent name="C:\Users\user\Documents\Web\Lineage2API\app\Contracts\Model\PasswordRecovery" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\Lineage2API\resources\views" />
-      <recent name="C:\Users\user\Documents\Web\Lineage2API\app\Models\Account" />
-      <recent name="C:\Users\user\Documents\Web\Lineage2API\app\Contracts\Model\Account" />
-      <recent name="C:\Users\user\Documents\Web\Lineage2API\app\Contracts\Repositories\Account" />
-      <recent name="C:\Users\user\Documents\Web\Lineage2API\app\Http\Requests\Account" />
     </key>
   </component>
   <component name="RunManager">
@@ -223,7 +242,10 @@
       <workItem from="1594930152594" duration="4031000" />
       <workItem from="1595101219157" duration="12248000" />
       <workItem from="1595526233609" duration="3411000" />
-      <workItem from="1595851709631" duration="27099000" />
+      <workItem from="1595851709631" duration="28146000" />
+      <workItem from="1596644847006" duration="5136000" />
+      <workItem from="1597330528700" duration="1837000" />
+      <workItem from="1597590413187" duration="14416000" />
     </task>
     <servers />
   </component>
@@ -234,30 +256,42 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.env" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="485" y="83" key="#com.intellij.ide.util.MemberChooser" timestamp="1595877113220">
+    <state x="275" y="25" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597595100770">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="485" y="83" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1595877113220" />
+    <state x="275" y="25" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1597595100770" />
+    <state x="485" y="83" key="#com.intellij.ide.util.MemberChooser" timestamp="1597599453678">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="485" y="83" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1597599453678" />
     <state x="413" y="122" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1595877446004">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="122" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1595877446004" />
-    <state x="463" y="122" key="FileChooserDialogImpl" timestamp="1594932557106">
+    <state x="463" y="122" key="FileChooserDialogImpl" timestamp="1597333131421">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="122" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1594932557106" />
-    <state x="391" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1595852099133">
+    <state x="463" y="122" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1597333131421" />
+    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1597595122532">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="391" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1595852099133" />
-    <state x="390" y="0" width="710" height="728" key="find.popup" timestamp="1595115417615">
+    <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1366.728@0.0.1366.728" timestamp="1597595122532" />
+    <state x="414" y="198" key="NewPhpClassDialog" timestamp="1597596731811">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="390" y="0" width="710" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1595115417615" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1596140293322">
+    <state x="414" y="198" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1597596731811" />
+    <state x="391" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1597330527721">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1596140293322" />
+    <state x="391" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1597330527721" />
+    <state x="390" y="0" width="710" height="728" key="find.popup" timestamp="1597624475301">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="390" y="0" width="710" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1597624475301" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1597593767403">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1597593767403" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

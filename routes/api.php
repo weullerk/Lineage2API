@@ -25,4 +25,7 @@ Route::prefix('v1')->group(function() {
     Route::post('account/recovery-password', 'App\Contracts\Controllers\Account\RecoveryPasswordControllerContract@recovery');
     Route::post('account/reset-password', 'App\Contracts\Controllers\Account\ResetPasswordControllerContract@reset');
     Route::post('account/create', 'App\Contracts\Controllers\Account\CreateAccountControllerContract@create');
+
+    Route::get('ranking/pvp', 'App\Contracts\Controllers\Ranking\RankingControllerContract@pvp');
+    Route::get('ranking/pk', 'App\Contracts\Controllers\Ranking\RankingControllerContract@pk');
 });
